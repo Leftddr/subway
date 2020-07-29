@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <script src = "./script.js"></script>
+        <script src="./jquery-3.5.1.min.js"></script>
+        <style>
+            body{
+                width:400px;
+                margin:0;
+                padding:1rem;
+            }
+            #result{
+                font-size:2rem;
+            }
+            #subNm{
+                font-size:15px;
+            }
+            #btn{
+                width:100%
+            }
+            #sel{
+                width:50px;
+            }
+            #btn_sub{
+                width:100%;
+            }
+            #btn_bus{
+                width:100%;
+            }
+            #btn_trans{
+                width:100%;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>지하철 정보</h1>
+        <span>지하철 역 : </span>
+        <input type="text" id="subNm" value=""> </br></br>
+        <span>찾고자 하는 개수 : </span>
+        <select id="sel">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+        </select> </br> </br>
+        <input type="button" id="btn_sub" value="지하철 검색">
+        <input type="button" id="btn_bus" value="버스 정류장 검색">
+        <input type="button" id="btn_trans" value="버스 환승 검색">
+        <div id="result"></div>
+    </body>
+</html>
